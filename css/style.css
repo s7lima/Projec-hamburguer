@@ -106,3 +106,7 @@ nav {
     font-size: 15px;
 }
 
+.catalog-snack h1, .catalog-drinks h1 {
+    text-align: center;
+    padding: 2.3rem;
+}
