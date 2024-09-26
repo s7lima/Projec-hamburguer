@@ -8,10 +8,18 @@
 .container {
     background-color: #f1f1f1;
     max-width: 1100px;
-    padding: 20px 50px;
     margin: 50px auto;
     position: relative;
 }
+
+.container-2 {
+    background-color: #f1f1f1;
+    max-width: 1100px;
+    padding: 15px 90px;
+    margin: 50px auto;
+    position: relative;
+}
+
 
 .container .catalog-snack img, .catalog-drinks img {
     width: 150px;
@@ -21,15 +29,15 @@
 
 .logo {
     width: 150px;
-    /* margin-top: 5px; */
     margin-bottom: 2px;
 }
 
 .navbar-container {
-    width: 100%;
-    height: 80px;
+    max-width: 100%;
+    height: 100%;
     padding: 0 2rem;
     font-weight: bold;
+    background-color: #000000;
 }
 
 nav {
@@ -52,13 +60,13 @@ nav {
 }
 
 .navbar-items a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 .navbar-items a:hover {
-    color: #a8a8a8;
+    color: #757575;
 }
 
 .default-btn {
@@ -69,7 +77,7 @@ nav {
 
 .navbar-items .default-btn:hover {
     background-color: #22bb5f;
-    color: #ffff;
+    color: #757575;
 }
 
 .main-banner {
@@ -106,7 +114,89 @@ nav {
     font-size: 15px;
 }
 
-.catalog-snack h1, .catalog-drinks h1 {
+.catalog-snack  {
+    display:flex;
+}
+
+.catalog-snack h2  {
+    padding-bottom: 7px;
+}
+
+.catalog-snack 
+.hm-tradicional, 
+.hm-cheddar-duplo, 
+.hm-bacon, .hm-salada {
+    width: 100%;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
-    padding: 2.3rem;
+}
+
+.info-cont{
+    font-size: 13px;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.price {
+    padding: 5px;
+    font-size: 15px;
+    color: #929191;
+}
+
+.catalog-drinks {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.bebidas-esquerda .coca-cola, .coca-zero {
+
+    padding: 10px;
+}
+
+.bebidas-direita .guanara, .agua {
+    padding: 10px;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid#cccc;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
 }
